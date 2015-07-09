@@ -1,0 +1,21 @@
+{
+  "name": "@mohayonao/operator",
+  "description": "simple operator",
+  "version": "0.0.0",
+  "author": "mohayonao <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/operator/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "homepage": "https://github.com/mohayonao/operator/",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/operator.git"
+  },
+  "scripts": {
+  }
+}
