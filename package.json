@@ -20,6 +20,12 @@
     "sinon": "^1.15.4",
     "web-audio-test-api": "^0.3.5"
   },
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js",
+    "lib"
+  ],
   "homepage": "https://github.com/mohayonao/operator/",
   "license": "MIT",
   "main": "index.js",
