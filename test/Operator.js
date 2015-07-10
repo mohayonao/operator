@@ -25,13 +25,6 @@ describe("Operator", () => {
       assert(op.context === audioContext);
     });
   });
-  describe("#outlet: GainNode", () => {
-    it("works", () => {
-      let op = new Operator(audioContext);
-
-      assert(op.outlet === op[GAIN]);
-    });
-  });
   describe("#type: string", () => {
     it("works", () => {
       let op = new Operator(audioContext);

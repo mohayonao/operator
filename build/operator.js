@@ -70,14 +70,14 @@ var Operator = (function () {
   }, {
     key: "setEnvelope",
     value: function setEnvelope(envelope) {
-      var target = arguments.length <= 1 || arguments[1] === undefined ? "gain" : arguments[1];
+      var target = arguments[1] === undefined ? "gain" : arguments[1];
 
       this[ENVELOPES][target] = envelope;
     }
   }, {
     key: "getEnvelope",
     value: function getEnvelope() {
-      var target = arguments.length <= 0 || arguments[0] === undefined ? "gain" : arguments[0];
+      var target = arguments[0] === undefined ? "gain" : arguments[0];
 
       return this[ENVELOPES][target];
     }
@@ -85,11 +85,6 @@ var Operator = (function () {
     key: "context",
     get: function get() {
       return this[CONTEXT];
-    }
-  }, {
-    key: "outlet",
-    get: function get() {
-      return this[OUTLET];
     }
   }, {
     key: "type",
