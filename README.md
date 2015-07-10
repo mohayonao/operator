@@ -22,12 +22,12 @@ Browser
 - `constructor(audioContext: AudioContext)`
 
 #### Instance attribute
-- `outlet: AudioNode`
+- `context: AudioContext`
 - `type: string`
 - `frequency: AudioParam`
 - `detune: AudioParam`
 - `gain: AudioParam`
-- `onended: EventHandler`
+- `onended: function`
 
 #### Instance methods
 - `connect(destination: AudioNode): void`
@@ -37,6 +37,10 @@ Browser
 - `setPeriodicWave(periodicWave: PeriodicWave): void`
 - `setEnvelope(envelope: any, target: string = 'gain'): void`
 - `getEnvelope(target: string = 'gain'): void`
+
+## AudioGraph
+
+![operator](https://raw.githubusercontent.com/wiki/mohayonao/operator/images/operator.png)
 
 ## See Also
 - [@mohayonao/envelope](https://github.com/mohayonao/envelope) - simple envelope
