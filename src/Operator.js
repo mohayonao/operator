@@ -17,10 +17,6 @@ export default class Operator {
     return this[CONTEXT];
   }
 
-  get outlet() {
-    return this[OUTLET];
-  }
-
   get type() {
     return this[OSCILLATOR].type;
   }
