@@ -1,4 +1,7 @@
 # OPERATOR
+[![Build Status](http://img.shields.io/travis/mohayonao/operator.svg?style=flat-square)](https://travis-ci.org/mohayonao/operator)
+[![NPM Version](http://img.shields.io/npm/v/@mohayonao/operator.svg?style=flat-square)](https://www.npmjs.org/package/@mohayonao/operator)
+[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://mohayonao.mit-license.org/)
 
 > simple operator
 
@@ -18,22 +21,26 @@ Browser
 ### Operator
 - `constructor(audioContext: AudioContext)`
 
-### Class methods
-- `build(algorithm: number, operators: Operator[]): Operator`
-
-### Instance attribute
+#### Instance attribute
+- `outlet: AudioNode`
 - `type: string`
 - `frequency: AudioParam`
 - `detune: AudioParam`
 - `gain: AudioParam`
 - `onended: EventHandler`
 
-### Instance methods
+#### Instance methods
 - `connect(destination: AudioNode): void`
 - `disconnect(): void`
 - `start(when: number): void`
 - `stop(when: number): void`
 - `setPeriodicWave(periodicWave: PeriodicWave): void`
+- `setEnvelope(envelope: any, target: string = 'gain'): void`
+- `getEnvelope(target: string = 'gain'): void`
+
+## See Also
+- [@mohayonao/envelope](https://github.com/mohayonao/envelope) - simple envelope
+- [@mohayonao/fm-synth](https://github.com/mohayonao/fm-synth) - simple frequency modulation synthesizer
 
 ## License
 MIT
