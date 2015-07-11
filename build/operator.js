@@ -14,8 +14,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var CONTEXT = typeof Symbol !== "undefined" ? Symbol("CONTEXT") : "_@mohayonao/operator:CONTEXT";
 exports.CONTEXT = CONTEXT;
-var OUTLET = typeof Symbol !== "undefined" ? Symbol("OUTLET") : "_@mohayonao/operator:OUTLET";
-exports.OUTLET = OUTLET;
 var OSCILLATOR = typeof Symbol !== "undefined" ? Symbol("OSCILLATOR") : "_@mohayonao/operator:OSCILLATOR";
 exports.OSCILLATOR = OSCILLATOR;
 var GAIN = typeof Symbol !== "undefined" ? Symbol("GAIN") : "_@mohayonao/operator:GAIN";
@@ -31,7 +29,6 @@ var Operator = (function () {
     this[CONTEXT] = audioContext;
     this[OSCILLATOR] = audioContext.createOscillator();
     this[GAIN] = audioContext.createGain();
-    this[OUTLET] = this[GAIN];
     this[ENVELOPES] = {};
   }
 
