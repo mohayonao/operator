@@ -1,1 +1,1 @@
-module.exports = require("./lib/Operator");
+module.exports = require("./lib");
