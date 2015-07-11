@@ -1,18 +1,16 @@
-export const CONTEXT = typeof Symbol !== "undefined" ? Symbol("CONTEXT") : "_@mohayonao/operator:CONTEXT";
 export const OSCILLATOR = typeof Symbol !== "undefined" ? Symbol("OSCILLATOR") : "_@mohayonao/operator:OSCILLATOR";
 export const GAIN = typeof Symbol !== "undefined" ? Symbol("GAIN") : "_@mohayonao/operator:GAIN";
 export const ENVELOPES = typeof Symbol !== "undefined" ? Symbol("ENVELOPES") : "_@mohayonao/operator:ENVELOPES";
 
 export default class Operator {
   constructor(audioContext) {
-    this[CONTEXT] = audioContext;
     this[OSCILLATOR] = audioContext.createOscillator();
     this[GAIN] = audioContext.createGain();
     this[ENVELOPES] = {};
   }
 
   get context() {
-    return this[CONTEXT];
+    return this[OSCILLATOR].context;
   }
 
   get type() {
